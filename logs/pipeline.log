@@ -1,0 +1,13 @@
+2026-10-06 16:06:38,407 | INFO     | Sample dataset generated: C:\Users\mansu\Documents\Python\Project3\data\raw\data.csv (1025 rows)
+2026-10-06 16:06:38,408 | INFO     | === ETL run started ===
+2026-10-06 16:06:38,408 | INFO     | EXTRACT: reading C:\Users\mansu\Documents\Python\Project3\data\raw\data.csv
+2026-10-06 16:06:38,427 | INFO     | EXTRACT: 1025 rows x 10 columns loaded
+2026-10-06 16:06:38,430 | INFO     | EXTRACT: missing values per column: {'age': 58, 'gender': 77, 'city': 67, 'annual_income': 61, 'spending_score': 62, 'subscription_type': 63, 'last_purchase_date': 61}
+2026-10-06 16:06:38,430 | INFO     | TRANSFORM: cleaning data
+2026-10-06 16:06:38,432 | INFO     | TRANSFORM: dropped 25 duplicate rows
+2026-10-06 16:06:38,435 | INFO     | TRANSFORM: 3 invalid ages set to NaN for imputation
+2026-10-06 16:06:38,437 | INFO     | TRANSFORM: fitting preprocessing pipeline (clip -> impute -> scale / encode)
+2026-10-06 16:06:38,535 | INFO     | TRANSFORM: output shape (1000, 19), no missing values remaining
+2026-10-06 16:06:38,544 | INFO     | LOAD: CSV written to C:\Users\mansu\Documents\Python\Project3\data\processed\customers_processed.csv
+2026-10-06 16:06:38,589 | INFO     | LOAD: 1000 rows written to SQLite table 'customers_processed' (C:\Users\mansu\Documents\Python\Project3\data\processed\pipeline.db)
+2026-10-06 16:06:38,589 | INFO     | === ETL run finished successfully ===
